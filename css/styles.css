@@ -19,6 +19,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .navlink-list {
@@ -27,6 +29,18 @@ body {
   font-family: "Open Sans" serif;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  /* margin-left: 32px;
+  border: 1px solid red; */
+}
+
+.navlink-item {
+  margin-right: 32px;
+}
+
+.navlink-item:last-child {
+  margin-right: 0;
 }
 
 .navlink-item a {
@@ -46,6 +60,7 @@ body {
   background-color: #DE2E54;
   border-radius: 8px;
   text-decoration: none;
+  display: inline-block;
 }
 
 /* HERO STYLES */
@@ -53,29 +68,43 @@ body {
 .hero {
   background: #0EB4C1;
   color: #fff;
+  padding-top: 30px;
 }
 
 .hero-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
 }
 
 .wrapper-hero-content {
+  margin-right: 177px;
   width: 500px;
 }
 
+.wrapper-title-text {
+  margin-bottom: 20px;
+}
+
 .hero-title {
+  margin: 0;
+  margin-bottom: 16px;
   font-family: "Open Sans Condensed";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
 }
 
+.hero-text {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
 
 /* SERVICE */
 .services-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -83,6 +112,8 @@ body {
 }
 
 .services-about {
+  margin: 0;
+  margin-bottom: 56px;
   font-family: "Open Sans Condensed";
   font-weight: 700;
   font-size: 36px;
@@ -93,16 +124,27 @@ body {
   display: flex;
 }
 
+.services-img {
+  margin-right: 64px;
+  margin-bottom: 80px;
+}
+
 .types-services {
   width: 600px;
 }
 
 .services-titles {
+  margin: 0;
+  margin-bottom: 24px;
   font-family: "Open Sans Condensed";
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
   color: #222222;;
+}
+
+.types-services p {
+  margin: 0;
 }
 
 .main-btn {
@@ -122,6 +164,8 @@ body {
 
 /* REGISTRATION SECTION */
 .registration-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,13 +173,30 @@ body {
 }
 
 .registration-title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: "Open Sans Condensed";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-  background-color: #fff;
+  color: #fff;
   display: inline-block;
   background-color: transparent;
+}
+
+.regstration-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.regstration-item {
+  margin-right: 40px;
+}
+
+.regstration-item:last-child {
+  margin-right: 0;
 }
 
 .contact-link {
@@ -150,10 +211,13 @@ body {
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
+  display: inline-block;
 }
 
 /* FOOTER */
 .site-footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -190,6 +254,16 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-item {
+  margin-right: 32px;
+}
+
+.footer-item:last-child {
+  margin-right: 0;
 }
 
 .footer-item a {
