@@ -12,41 +12,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <!-- HEADER -->
   <header>
     <!-- Ansormed Logo -->
-    <img src="img/AnsorMed-logo.svg" alt="AnsorMed logosi">
-    <ul>
-      <li><a href="#">Xizmatlar</a></li>
-      <li><a href="#">Dorilar</a></li>
-      <li><a href="#">Asal</a></li>
-      <li><a href="#">Kontaktlar</a></li>
-      <li><a href="#">Blog</a></li>
-    </ul>
-    <a href="#">Qabulga yozilish</a>
+    <a href="#">
+      <img src="img/AnsorMed-logo.svg" alt="AnsorMed logosi">
+    </a>
+    <nav>
+      <ul class="navlink-list">
+        <li class="navlink-item"><a href="#">Xizmatlar</a></li>
+        <li class="navlink-item"><a href="#">Dorilar</a></li>
+        <li class="navlink-item"><a href="#">Asal</a></li>
+        <li class="navlink-item"><a href="#">Kontaktlar</a></li>
+        <li class="navlink-item"><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+    <a class="main-link" href="#">Qabulga yozilish</a>
   </header>
   <!-- HEADER END -->
   <!-- MAIN -->
   <main>
-    <section>
-      <h1>Tabiiy davolash usullari yordamida kasalliklardan xalos bo’ling.</h1>
-      <p>Hijoma, manual terapiya, zuluk va turli tabiiy giyohlar eng ko’p uchraydigan kasalliklarni yengishda yordam beradi. Sog’ligingizni o’z ishining professionallariga ishonib topshiring.</p>
-      <a href="#">Qabulga yozilish</a>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Tabiiy davolash usullari yordamida kasalliklardan xalos bo’ling.</h1>
+        <p>Hijoma, manual terapiya, zuluk va turli tabiiy giyohlar eng ko’p uchraydigan kasalliklarni yengishda yordam beradi. Sog’ligingizni o’z ishining professionallariga ishonib topshiring.</p>
 
-      <img src="img/hero-doctor's-img.jpg" srcset="img/hero-doctor's-img.jpg 1x, img/hero-doctor's-img@2x.jpg 2x" alt="Doktor rasmi">
+        <a class="main-link" href="#">Qabulga yozilish</a>
+
+        <!-- IMG -->
+        <img class="hero-img" src="img/hero-doctor's-img.png" srcset="img/hero-doctor's-img.png 1x, img/hero-doctor's-img@2x.png 2x" alt="Doktor rasmi">
+      </div>
     </section>
 
-    <section>
-      <h2>Xizmatlar</h2>
+    <section class="services-section">
+      <h2 class="services-about">Xizmatlar</h2>
       <ul>
         <li>
           <!-- IMG -->
           <img src="img/vacum.jpg" srcset="img/vacum.jpg 1x, img/vacum@2x.jpg 2x" width="200" height="200" alt="Vacum rasmi">
           <div>
-            <h3>Hijoma</h3>
+            <h3 class="services-titles">Hijoma</h3>
             <p>Imom Termiziy Abdulloh ibn Abbos raziyallohu anhumodan rivoyat qilgan hadisda rasululloh sallallohu alayhi va sallam dedilar: «Sizlar hijoma qiladigan kunlaringizning eng yaxshisi 17, 19 va 21-kunlardir» (bu kunlar hijrij-kamariy hisobdagi oylar kunlaridir).</p>
           </div>
         </li>
@@ -54,7 +64,7 @@
           <!-- IMG -->
           <img src="img/manual-terapia.jpg" srcset="img/manual-terapia.jpg 1x, img/manual-terapia@2x.jpg 2x" width="200" height="200" alt="manual terapiya">
           <div>
-            <h3>Manual terapiya</h3>
+            <h3 class="services-titles">Manual terapiya</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
           </div>
         </li>
@@ -62,7 +72,7 @@
           <!-- IMG -->
           <img src="img/worm.jpg" srcset="img/worm.jpg 1x, img/worm@2x.jpg 2x" width="200" height="200" alt="zuluk qurtlari rasmi">
           <div>
-            <h3>Zuluk bilan davolash</h3>
+            <h3 class="services-titles">Zuluk bilan davolash</h3>
             <p>Girudoterapiya (lot. hirūdō — «zuluk» va qad. yun. θεραπεία — «davolash») — ma’lum kasalliklarni dorivor zuluklar (Hirudo medicinalis) yordamida davolash usuli. Fizioterapevtik muolaja, muqobil tibbiyotga oid sanaladi. Bunday zuluklar ushbu kichik sinf chuvchalchanglariga oid yagona tur hisoblanadi, qolganlari shifobaxsh ta’sir ko’rsatmaydi.</p>
           </div>
         </li>
@@ -70,29 +80,37 @@
           <!-- IMG -->
           <img src="img/honey.jpg" srcset="img/honey.jpg 1x, img/honey@2x.jpg 2x" width="200" height="200" alt="Asal rasmi">
           <div>
-            <h3>Tabiiy dori vositalari</h3>
+            <h3 class="services-titles">Tabiiy dori vositalari</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
           </div>
         </li>
       </ul>
-      <a href="#">Qabulga yozilish</a>
+      <a class="main-btn" href="#">Qabulga yozilish</a>
     </section>
-    <section>
-      <h4>Qabulga ro’yxatdan o’ting</h4>
-      <a href="#">Qo’ng’iroq qilish</a>
-      <a href="#">Telegramdan yozish</a>
+    <section class="registration-section">
+      <h4 class="registration-title">Qabulga ro’yxatdan o’ting</h4>
+      <div class="wrapper-registration-content">
+        <a class="contact-link" href="#">Qo’ng’iroq qilish</a>
+        <a class="contact-link" href="#">Telegramdan yozish</a>
+      </div>
     </section>
   </main>
 
   <!-- MAIN END -->
   <!-- FOOTER -->
-  <footer>
+  <footer class="site-footer">
     <!-- Ansormed logo -->
-    <a href="#">Xizmatlar</a>
-    <a href="#">Dorilar</a>
-    <a href="#">Asal</a>
-    <a href="#">Kontaktlar</a>
-    <a href="#">Blog</a>
+    <a class="footer-logo" href="#">
+      <img class="footer-logo-img" src="img/footer-logo-icon.svg" alt="AnsorMed logosi">
+      <span style="color: #fff;">AnsorMed</span>
+    </a>
+    <ul class="footer-list">
+      <li class="footer-item"><a href="#">Xizmatlar</a></li>
+      <li class="footer-item"><a href="#">Dorilar</a></li>
+      <li class="footer-item"><a href="#">Asal</a></li>
+      <li class="footer-item"><a href="#">Kontaktlar</a></li>
+      <li class="footer-item"><a href="#">Blog</a></li>
+    </ul>
   </footer>
   <!-- FOOTER END -->
 </body>
