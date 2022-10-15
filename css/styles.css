@@ -15,7 +15,15 @@ body {
 }
 
 /* header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navlink-list {
+  display: flex;
+  list-style-type: none;
   font-family: "Open Sans" serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -48,6 +56,13 @@ body {
 }
 
 .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wrapper-hero-content {
   width: 500px;
 }
 
@@ -62,6 +77,9 @@ body {
 /* SERVICE */
 .services-section {
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .services-about {
@@ -69,6 +87,14 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
+}
+
+.services-item {
+  display: flex;
+}
+
+.types-services {
+  width: 600px;
 }
 
 .services-titles {
@@ -96,6 +122,9 @@ body {
 
 /* REGISTRATION SECTION */
 .registration-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #0EB4C1;
 }
 
@@ -125,6 +154,9 @@ body {
 
 /* FOOTER */
 .site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #222222;
 }
 
@@ -148,6 +180,8 @@ body {
 }
 
 .footer-list {
+  display: flex;
+  list-style-type: none;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
