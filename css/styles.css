@@ -16,11 +16,23 @@ body {
 
 /* header */
 .site-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.location {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .navlink-list {
