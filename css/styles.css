@@ -150,6 +150,17 @@ body {
   opacity: 0.6;
 }
 
+.main-link-solid:hover {
+  background-color: rgba(222, 46, 84, 0.8);
+  border-color: transparent;
+  color: #fff;
+}
+
+.main-link-solid:active {
+  background-color: rgba(222, 46, 84, 0.6);
+  opacity: 1;
+}
+
 /* HERO STYLES */
 
 .hero {
@@ -158,13 +169,15 @@ body {
   padding-top: 30px;
 }
 
-.hero-content {
+.hero-container {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.wrapper-hero-content {
+.hero-content {
+  padding-top: 120px;
+  padding-bottom: 120px;
   margin-right: 177px;
   width: 500px;
 }
@@ -173,7 +186,7 @@ body {
   margin-bottom: 20px;
 }
 
-.hero-title {
+.hero-heading {
   margin: 0;
   margin-bottom: 16px;
   font-family: "Open Sans Condensed";
@@ -187,22 +200,6 @@ body {
   margin-bottom: 16px;
 }
 
-.hero-link {
-  font-family: "Open Sans Condensed";
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 12px 24px;
-  background-color: #DE2E54;
-  border: 2px solid #DE2E54;
-  border-radius: 8px;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color .4s ease;
-}
 
 .hero-link:hover {
   background-color: rgba(222, 46, 84, 0.8);
